@@ -115,6 +115,14 @@ void caricaDomande(Domanda *domande, int *numeroDomande, int livello) {
         strcpy(domande[8].opzioni[3], "Quando una variabile è di tipo errato");
         domande[8].rispostaCorretta = 'a';
 
+        strcpy(domande[26].domanda, "Quale funzione in C permette di leggere una stringa da input?");
+        strcpy(domande[26].opzioni[0], "scanf()");
+        strcpy(domande[26].opzioni[1], "gets()");
+        strcpy(domande[26].opzioni[2], "fgets()");
+        strcpy(domande[26].opzioni[3], "read()");
+        domande[26].rispostaCorretta = 'c';
+        break;
+
     case 2:
         *numeroDomande = 35;
 
@@ -816,14 +824,297 @@ void caricaDomande(Domanda *domande, int *numeroDomande, int livello) {
         break;
 
 
-    case 6:
-        *numeroDomande = 1;
-        strcpy(domande[31].domanda, "Domanda prova 1");
-        strcpy(domande[31].opzioni[0], "Risposta a");
-        strcpy(domande[31].opzioni[1], "Risposta b");
-        strcpy(domande[31].opzioni[2], "Risposta c");
-        strcpy(domande[31].opzioni[3], "Risposta d");
-        domande[31].rispostaCorretta = 'a';
+        case 6:
+            *numeroDomande = 20;
+
+            strcpy(domande[0].domanda, "Qual è l'indice del primo elemento di un array in C?");
+            strcpy(domande[0].opzioni[0], "0");
+            strcpy(domande[0].opzioni[1], "1");
+            strcpy(domande[0].opzioni[2], "Dipende dal tipo dell'array");
+            strcpy(domande[0].opzioni[3], "Dipende dall'implementazione del compilatore");
+            domande[0].rispostaCorretta = 'a';
+
+            strcpy(domande[1].domanda, "Qual è la dimensione in byte di un array int di 10 elementi su una macchina dove sizeof(int) è 4?");
+            strcpy(domande[1].opzioni[0], "10");
+            strcpy(domande[1].opzioni[1], "40");
+            strcpy(domande[1].opzioni[2], "44");
+            strcpy(domande[1].opzioni[3], "Dipende dalla piattaforma");
+            domande[1].rispostaCorretta = 'b';
+
+            strcpy(domande[2].domanda, "Cosa succede se si accede a un elemento di un array utilizzando un indice fuori dai limiti?");
+            strcpy(domande[2].opzioni[0], "Genera un errore di compilazione");
+            strcpy(domande[2].opzioni[1], "Genera un errore di runtime");
+            strcpy(domande[2].opzioni[2], "Comportamento indefinito");
+            strcpy(domande[2].opzioni[3], "Restituisce 0");
+            domande[2].rispostaCorretta = 'c';
+
+            strcpy(domande[3].domanda, "Come si passa un array come argomento a una funzione?");
+            strcpy(domande[3].opzioni[0], "Passando una copia dell'array");
+            strcpy(domande[3].opzioni[1], "Passando il puntatore al primo elemento dell'array");
+            strcpy(domande[3].opzioni[2], "Passando la dimensione dell'array");
+            strcpy(domande[3].opzioni[3], "Non è possibile passare un array a una funzione");
+            domande[3].rispostaCorretta = 'b';
+
+            strcpy(domande[4].domanda, "Come si calcola la dimensione di un array statico in C?");
+            strcpy(domande[4].opzioni[0], "sizeof(array)");
+            strcpy(domande[4].opzioni[1], "sizeof(array) / sizeof(array[0])");
+            strcpy(domande[4].opzioni[2], "sizeof(array[0]) * sizeof(array)");
+            strcpy(domande[4].opzioni[3], "Non è possibile calcolarla");
+            domande[4].rispostaCorretta = 'b';
+
+            strcpy(domande[5].domanda, "Qual è il valore iniziale di un array non inizializzato in C?");
+            strcpy(domande[5].opzioni[0], "0 per tutti gli elementi");
+            strcpy(domande[5].opzioni[1], "Indefinito");
+            strcpy(domande[5].opzioni[2], "Dipende dal tipo dell'array");
+            strcpy(domande[5].opzioni[3], "Dipende dal compilatore");
+            domande[5].rispostaCorretta = 'b';
+
+            strcpy(domande[6].domanda, "Cosa rappresenta l'indirizzo dell'array quando viene passato a una funzione?");
+            strcpy(domande[6].opzioni[0], "L'indirizzo del primo elemento");
+            strcpy(domande[6].opzioni[1], "La dimensione dell'array");
+            strcpy(domande[6].opzioni[2], "L'indirizzo del puntatore all'array");
+            strcpy(domande[6].opzioni[3], "L'intero array come copia");
+            domande[6].rispostaCorretta = 'a';
+
+            strcpy(domande[7].domanda, "Qual è il risultato di sommare un intero a un puntatore a un array?");
+            strcpy(domande[7].opzioni[0], "Incrementa l'indirizzo del puntatore di un numero di byte pari alla somma");
+            strcpy(domande[7].opzioni[1], "Incrementa l'indirizzo del puntatore di un numero di elementi pari alla somma");
+            strcpy(domande[7].opzioni[2], "Sposta il puntatore alla fine dell'array");
+            strcpy(domande[7].opzioni[3], "Non è permesso in C");
+            domande[7].rispostaCorretta = 'b';
+
+            strcpy(domande[8].domanda, "Quale dichiarazione è corretta per un array bidimensionale?");
+            strcpy(domande[8].opzioni[0], "int array[][];");
+            strcpy(domande[8].opzioni[1], "int array[10][];");
+            strcpy(domande[8].opzioni[2], "int array[][10];");
+            strcpy(domande[8].opzioni[3], "int array[10][10];");
+            domande[8].rispostaCorretta = 'd';
+
+            strcpy(domande[9].domanda, "Come si accede al valore nella seconda riga e terza colonna di un array bidimensionale int[5][5]?");
+            strcpy(domande[9].opzioni[0], "int[2][3]");
+            strcpy(domande[9].opzioni[1], "int[1][2]");
+            strcpy(domande[9].opzioni[2], "array[1][2]");
+            strcpy(domande[9].opzioni[3], "array[2][3]");
+            domande[9].rispostaCorretta = 'c';
+
+            strcpy(domande[10].domanda, "Cosa accade se l'inizializzazione di un array contiene meno valori rispetto alla sua dimensione?");
+            strcpy(domande[10].opzioni[0], "I valori mancanti vengono impostati a 0");
+            strcpy(domande[10].opzioni[1], "I valori mancanti rimangono indefiniti");
+            strcpy(domande[10].opzioni[2], "Non è possibile compilare il programma");
+            strcpy(domande[10].opzioni[3], "Il compilatore genera un warning ma imposta valori casuali");
+            domande[10].rispostaCorretta = 'a';
+
+            strcpy(domande[10].domanda, "Cosa accade se si accede a un indice di un array che è fuori dai limiti definiti?");
+            strcpy(domande[10].opzioni[0], "Si verifica un comportamento indefinito.");
+            strcpy(domande[10].opzioni[1], "Viene lanciata un'eccezione.");
+            strcpy(domande[10].opzioni[2], "Il programma termina immediatamente.");
+            strcpy(domande[10].opzioni[3], "Viene restituito un valore predefinito di 0.");
+            domande[10].rispostaCorretta = 'a';
+
+            strcpy(domande[11].domanda, "Qual è il significato del parametro formale `int arr[]` in una funzione?");
+            strcpy(domande[11].opzioni[0], "È un puntatore al primo elemento dell'array passato.");
+            strcpy(domande[11].opzioni[1], "È una copia dell'array passato.");
+            strcpy(domande[11].opzioni[2], "È un array bidimensionale.");
+            strcpy(domande[11].opzioni[3], "È una costante immutabile.");
+            domande[11].rispostaCorretta = 'a';
+
+            strcpy(domande[12].domanda, "Qual è la differenza tra `int arr[10]` e `int *arr`?");
+            strcpy(domande[12].opzioni[0], "Il primo è un array, il secondo è un puntatore.");
+            strcpy(domande[12].opzioni[1], "Entrambi sono puntatori al primo elemento.");
+            strcpy(domande[12].opzioni[2], "Il primo è un puntatore, il secondo è un array.");
+            strcpy(domande[12].opzioni[3], "Non c'è differenza tra i due.");
+            domande[12].rispostaCorretta = 'a';
+
+            strcpy(domande[13].domanda, "Cosa restituisce la funzione `sizeof` quando viene applicata a un array?");
+            strcpy(domande[13].opzioni[0], "La dimensione totale in byte dell'array.");
+            strcpy(domande[13].opzioni[1], "Il numero di elementi dell'array.");
+            strcpy(domande[13].opzioni[2], "La dimensione in byte del primo elemento.");
+            strcpy(domande[13].opzioni[3], "Il puntatore al primo elemento dell'array.");
+            domande[13].rispostaCorretta = 'a';
+
+            strcpy(domande[14].domanda, "Qual è il valore di un array non inizializzato dichiarato come `int arr[5]`?");
+            strcpy(domande[14].opzioni[0], "Valori casuali non definiti.");
+            strcpy(domande[14].opzioni[1], "Tutti i valori sono inizializzati a 0.");
+            strcpy(domande[14].opzioni[2], "Tutti i valori sono inizializzati a -1.");
+            strcpy(domande[14].opzioni[3], "Il programma non compila.");
+            domande[14].rispostaCorretta = 'a';
+
+            strcpy(domande[15].domanda, "Qual è lo scopo dell'array `argv[]` in un programma C?");
+            strcpy(domande[15].opzioni[0], "Contiene gli argomenti della riga di comando come stringhe.");
+            strcpy(domande[15].opzioni[1], "Contiene il nome del programma eseguibile.");
+            strcpy(domande[15].opzioni[2], "Memorizza il numero di argomenti della riga di comando.");
+            strcpy(domande[15].opzioni[3], "È un array di numeri interi.");
+            domande[15].rispostaCorretta = 'a';
+
+            strcpy(domande[16].domanda, "Cosa accade quando un array multidimensionale viene passato a una funzione?");
+            strcpy(domande[16].opzioni[0], "Solo il puntatore al primo elemento viene passato.");
+            strcpy(domande[16].opzioni[1], "Tutta la memoria dell'array viene copiata.");
+            strcpy(domande[16].opzioni[2], "Non è possibile passare array multidimensionali.");
+            strcpy(domande[16].opzioni[3], "Tutti gli elementi dell'array vengono inizializzati a 0.");
+            domande[16].rispostaCorretta = 'a';
+
+            strcpy(domande[17].domanda, "Come si inizializza un array bidimensionale di dimensioni 3x3?");
+            strcpy(domande[17].opzioni[0], "int arr[3][3] = {{1,2,3},{4,5,6},{7,8,9}};");
+            strcpy(domande[17].opzioni[1], "int arr[3][3] = [1,2,3,4,5,6,7,8,9];");
+            strcpy(domande[17].opzioni[2], "int arr[3][3] = {1,2,3,4,5,6,7,8,9};");
+            strcpy(domande[17].opzioni[3], "int arr[3][3] = (1,2,3,4,5,6,7,8,9);");
+            domande[17].rispostaCorretta = 'a';
+
+            strcpy(domande[18].domanda, "Qual è la caratteristica principale degli array statici in C?");
+            strcpy(domande[18].opzioni[0], "Hanno una dimensione fissata al momento della compilazione.");
+            strcpy(domande[18].opzioni[1], "Possono essere ridimensionati dinamicamente.");
+            strcpy(domande[18].opzioni[2], "Non possono essere inizializzati.");
+            strcpy(domande[18].opzioni[3], "Hanno un puntatore implicito.");
+            domande[18].rispostaCorretta = 'a';
+
+            strcpy(domande[19].domanda, "Cosa rappresenta `*(arr + i)` in un array `arr`?");
+            strcpy(domande[19].opzioni[0], "L'elemento all'indice `i` dell'array.");
+            strcpy(domande[19].opzioni[1], "L'indirizzo di memoria dell'elemento all'indice `i`.");
+            strcpy(domande[19].opzioni[2], "Il valore dell'indirizzo di memoria successivo.");
+            strcpy(domande[19].opzioni[3], "Il puntatore all'array.");
+            domande[19].rispostaCorretta = 'a';
+
+            strcpy(domande[20].domanda, "Completate la frase: Le liste e le tabelle di valori sono memorizzate in __________.");
+            strcpy(domande[20].opzioni[0], "Array.");
+            strcpy(domande[20].opzioni[1], "Strutture.");
+            strcpy(domande[20].opzioni[2], "File.");
+            strcpy(domande[20].opzioni[3], "Variabili.");
+            domande[20].rispostaCorretta = 'a';
+
+            strcpy(domande[21].domanda, "Completate la frase: Il numero usato per riferirsi a un particolare elemento di un array è chiamato il suo __________.");
+            strcpy(domande[21].opzioni[0], "Indice.");
+            strcpy(domande[21].opzioni[1], "Offset.");
+            strcpy(domande[21].opzioni[2], "Chiave.");
+            strcpy(domande[21].opzioni[3], "Parametro.");
+            domande[21].rispostaCorretta = 'a';
+
+            strcpy(domande[22].domanda, "Completate la frase: Una __________ va usata per specificare la dimensione di un array perché rende il programma più modificabile.");
+            strcpy(domande[22].opzioni[0], "Costante simbolica.");
+            strcpy(domande[22].opzioni[1], "Variabile globale.");
+            strcpy(domande[22].opzioni[2], "Variabile locale.");
+            strcpy(domande[22].opzioni[3], "Funzione.");
+            domande[22].rispostaCorretta = 'a';
+
+            strcpy(domande[23].domanda, "Completate la frase: Il processo di messa in ordine degli elementi di un array è chiamato __________ dell’array.");
+            strcpy(domande[23].opzioni[0], "Ordinamento.");
+            strcpy(domande[23].opzioni[1], "Filtraggio.");
+            strcpy(domande[23].opzioni[2], "Indicizzazione.");
+            strcpy(domande[23].opzioni[3], "Iterazione.");
+            domande[23].rispostaCorretta = 'a';
+
+            strcpy(domande[24].domanda, "Completate la frase: Determinare se un array contiene un certo valore chiave si dice __________ nell’array.");
+            strcpy(domande[24].opzioni[0], "Ricerca.");
+            strcpy(domande[24].opzioni[1], "Indicizzazione.");
+            strcpy(domande[24].opzioni[2], "Classificazione.");
+            strcpy(domande[24].opzioni[3], "Iterazione.");
+            domande[24].rispostaCorretta = 'a';
+
+            strcpy(domande[25].domanda, "Completate la frase: Un array che usa due indici è detto array __________.");
+            strcpy(domande[25].opzioni[0], "Bidimensionale.");
+            strcpy(domande[25].opzioni[1], "Dinamico.");
+            strcpy(domande[25].opzioni[2], "Multivettoriale.");
+            strcpy(domande[25].opzioni[3], "Monodimensionale.");
+            domande[25].rispostaCorretta = 'a';
+
+            strcpy(domande[26].domanda, "Un array può memorizzare molti tipi differenti di valori.");
+            strcpy(domande[26].opzioni[0], "Vero.");
+            strcpy(domande[26].opzioni[1], "Falso. Tutti gli elementi di un array devono essere dello stesso tipo.");
+            strcpy(domande[26].opzioni[2], "");
+            strcpy(domande[26].opzioni[3], "");
+            domande[26].rispostaCorretta = 'b';
+
+            strcpy(domande[27].domanda, "L’indice di un array può essere del tipo di dati double.");
+            strcpy(domande[27].opzioni[0], "Vero.");
+            strcpy(domande[27].opzioni[1], "Falso. Gli indici devono essere interi.");
+            strcpy(domande[27].opzioni[2], "");
+            strcpy(domande[27].opzioni[3], "");
+            domande[27].rispostaCorretta = 'b';
+
+            strcpy(domande[28].domanda, "Se in una lista di inizializzatori vi sono meno inizializzatori del numero degli elementi nell’array, il C automaticamente inizializza i restanti elementi all’ultimo valore nella lista degli inizializzatori.");
+            strcpy(domande[28].opzioni[0], "Vero.");
+            strcpy(domande[28].opzioni[1], "Falso. I restanti elementi sono inizializzati a 0.");
+            strcpy(domande[28].opzioni[2], "");
+            strcpy(domande[28].opzioni[3], "");
+            domande[28].rispostaCorretta = 'b';
+
+            strcpy(domande[29].domanda, "È un errore se una lista di inizializzatori contiene più inizializzatori di quanti sono gli elementi nell’array.");
+            strcpy(domande[29].opzioni[0], "Vero.");
+            strcpy(domande[29].opzioni[1], "Falso. Il compilatore segnalerà un errore.");
+            strcpy(domande[29].opzioni[2], "");
+            strcpy(domande[29].opzioni[3], "");
+            domande[29].rispostaCorretta = 'a';
+
+            strcpy(domande[30].domanda, "L’elemento individuale di un array che viene passato a una funzione come un argomento della forma a[i] e viene modificato nella funzione chiamata conterrà poi il valore modificato nella funzione chiamante.");
+            strcpy(domande[30].opzioni[0], "Vero.");
+            strcpy(domande[30].opzioni[1], "Falso. L'array è passato per riferimento, ma la modifica dipende dal contesto.");
+            strcpy(domande[30].opzioni[2], "");
+            strcpy(domande[30].opzioni[3], "");
+            domande[30].rispostaCorretta = 'a';
+
+
+            strcpy(domande[31].domanda, "Come si accede a un elemento di un array tramite un puntatore?");
+            strcpy(domande[31].opzioni[0], "array + i");
+            strcpy(domande[31].opzioni[1], "*(array + i)");
+            strcpy(domande[31].opzioni[2], "&(array[i])");
+            strcpy(domande[31].opzioni[3], "array[i]");
+            domande[31].rispostaCorretta = 'b';
+
+            strcpy(domande[32].domanda, "Qual è la differenza tra array[i] e *(array + i) in C?");
+            strcpy(domande[32].opzioni[0], "Sono equivalenti");
+            strcpy(domande[32].opzioni[1], "array[i] è più efficiente di *(array + i)");
+            strcpy(domande[32].opzioni[2], "*(array + i) è valido solo con puntatori");
+            strcpy(domande[32].opzioni[3], "Non c'è differenza ma *(array + i) è meno leggibile");
+            domande[32].rispostaCorretta = 'a';
+
+            strcpy(domande[33].domanda, "Un array può essere ridimensionato dinamicamente?");
+            strcpy(domande[33].opzioni[0], "Sì, usando realloc()");
+            strcpy(domande[33].opzioni[1], "No, la dimensione è fissa");
+            strcpy(domande[33].opzioni[2], "Sì, usando malloc()");
+            strcpy(domande[33].opzioni[3], "Solo se è dichiarato come puntatore");
+            domande[33].rispostaCorretta = 'a';
+
+            strcpy(domande[34].domanda, "Come si calcola la lunghezza di una stringa in C?");
+            strcpy(domande[34].opzioni[0], "Con la funzione strlen()");
+            strcpy(domande[34].opzioni[1], "Con la funzione size()");
+            strcpy(domande[34].opzioni[2], "Con la funzione length()");
+            strcpy(domande[34].opzioni[3], "Con la funzione string_length()");
+            domande[34].rispostaCorretta = 'a';
+
+            strcpy(domande[35].domanda, "Quale operatore viene utilizzato per accedere ai membri di una struttura in C?");
+            strcpy(domande[35].opzioni[0], ".");
+            strcpy(domande[35].opzioni[1], "->");
+            strcpy(domande[35].opzioni[2], "::");
+            strcpy(domande[35].opzioni[3], "#");
+            domande[35].rispostaCorretta = 'a';
+
+            strcpy(domande[36].domanda, "Qual è la differenza principale tra `malloc()` e `calloc()` in C?");
+            strcpy(domande[36].opzioni[0], "`malloc()` alloca memoria non inizializzata, mentre `calloc()` alloca memoria e la inizializza a zero");
+            strcpy(domande[36].opzioni[1], "`malloc()` inizializza la memoria a zero, mentre `calloc()` la lascia non inizializzata");
+            strcpy(domande[36].opzioni[2], "`malloc()` alloca un solo blocco di memoria, mentre `calloc()` ne alloca più blocchi");
+            strcpy(domande[36].opzioni[3], "Non c'è differenza tra i due");
+            domande[36].rispostaCorretta = 'a';
+
+            strcpy(domande[37].domanda, "Cosa fa la funzione `free()` in C?");
+            strcpy(domande[37].opzioni[0], "Dealloca la memoria precedentemente allocata dinamicamente");
+            strcpy(domande[37].opzioni[1], "Libera la memoria di sistema");
+            strcpy(domande[37].opzioni[2], "Crea una nuova variabile");
+            strcpy(domande[37].opzioni[3], "Inizializza una variabile");
+            domande[37].rispostaCorretta = 'a';
+
+            strcpy(domande[38].domanda, "Cosa rappresenta il carattere `\0` in C?");
+            strcpy(domande[38].opzioni[0], "Il terminatore di stringa");
+            strcpy(domande[38].opzioni[1], "Il carattere di nuova linea");
+            strcpy(domande[38].opzioni[2], "Un operatore");
+            strcpy(domande[38].opzioni[3], "Un valore numerico");
+            domande[38].rispostaCorretta = 'a';
+
+            strcpy(domande[39].domanda, "Cosa fa la funzione `strcmp()` in C?");
+            strcpy(domande[39].opzioni[0], "Confronta due stringhe");
+            strcpy(domande[39].opzioni[1], "Copia una stringa in un'altra");
+            strcpy(domande[39].opzioni[2], "Aggiunge una stringa alla fine di un'altra");
+            strcpy(domande[39].opzioni[3], "Converte una stringa in maiuscolo");
+            domande[39].rispostaCorretta = 'a';
+            
         break;
     
     default:
@@ -845,54 +1136,15 @@ void caricaDomande(Domanda *domande, int *numeroDomande, int livello) {
 /* 
     
 
-    strcpy(domande[18].domanda, "Come si calcola la lunghezza di una stringa in C?");
-    strcpy(domande[18].opzioni[0], "Con la funzione strlen()");
-    strcpy(domande[18].opzioni[1], "Con la funzione size()");
-    strcpy(domande[18].opzioni[2], "Con la funzione length()");
-    strcpy(domande[18].opzioni[3], "Con la funzione string_length()");
-    domande[18].rispostaCorretta = 'a';
+    
 
-    strcpy(domande[19].domanda, "Come si fa a dichiarare un array di 10 numeri interi in C?");
-    strcpy(domande[19].opzioni[0], "int arr[10];");
-    strcpy(domande[19].opzioni[1], "int arr(10);");
-    strcpy(domande[19].opzioni[2], "array int[10];");
-    strcpy(domande[19].opzioni[3], "int arr[] = {10};");
-    domande[19].rispostaCorretta = 'a';
 
-    strcpy(domande[23].domanda, "Quale operatore viene utilizzato per accedere ai membri di una struttura in C?");
-    strcpy(domande[23].opzioni[0], ".");
-    strcpy(domande[23].opzioni[1], "->");
-    strcpy(domande[23].opzioni[2], "::");
-    strcpy(domande[23].opzioni[3], "#");
-    domande[23].rispostaCorretta = 'a';
 
-    strcpy(domande[24].domanda, "Qual è la differenza principale tra `malloc()` e `calloc()` in C?");
-    strcpy(domande[24].opzioni[0], "`malloc()` alloca memoria non inizializzata, mentre `calloc()` alloca memoria e la inizializza a zero");
-    strcpy(domande[24].opzioni[1], "`malloc()` inizializza la memoria a zero, mentre `calloc()` la lascia non inizializzata");
-    strcpy(domande[24].opzioni[2], "`malloc()` alloca un solo blocco di memoria, mentre `calloc()` ne alloca più blocchi");
-    strcpy(domande[24].opzioni[3], "Non c'è differenza tra i due");
-    domande[24].rispostaCorretta = 'a';
+    
 
-    strcpy(domande[25].domanda, "Cosa fa la funzione `free()` in C?");
-    strcpy(domande[25].opzioni[0], "Dealloca la memoria precedentemente allocata dinamicamente");
-    strcpy(domande[25].opzioni[1], "Libera la memoria di sistema");
-    strcpy(domande[25].opzioni[2], "Crea una nuova variabile");
-    strcpy(domande[25].opzioni[3], "Inizializza una variabile");
-    domande[25].rispostaCorretta = 'a';
+    
 
-    strcpy(domande[26].domanda, "Quale funzione in C permette di leggere una stringa da input?");
-    strcpy(domande[26].opzioni[0], "scanf()");
-    strcpy(domande[26].opzioni[1], "gets()");
-    strcpy(domande[26].opzioni[2], "fgets()");
-    strcpy(domande[26].opzioni[3], "read()");
-    domande[26].rispostaCorretta = 'c';
-
-    strcpy(domande[27].domanda, "Cosa fa la funzione `strcmp()` in C?");
-    strcpy(domande[27].opzioni[0], "Confronta due stringhe");
-    strcpy(domande[27].opzioni[1], "Copia una stringa in un'altra");
-    strcpy(domande[27].opzioni[2], "Aggiunge una stringa alla fine di un'altra");
-    strcpy(domande[27].opzioni[3], "Converte una stringa in maiuscolo");
-    domande[27].rispostaCorretta = 'a';
+    
 
     strcpy(domande[28].domanda, "Come si dichiarano variabili di tipo puntatore in C?");
     strcpy(domande[28].opzioni[0], "tipo *nome;");
@@ -936,11 +1188,6 @@ void caricaDomande(Domanda *domande, int *numeroDomande, int livello) {
     strcpy(domande[48].opzioni[3], "tipo* nome(parametri);");
     domande[48].rispostaCorretta = 'a';
 
-    strcpy(domande[49].domanda, "Cosa rappresenta il carattere `\0` in C?");
-    strcpy(domande[49].opzioni[0], "Il terminatore di stringa");
-    strcpy(domande[49].opzioni[1], "Il carattere di nuova linea");
-    strcpy(domande[49].opzioni[2], "Un operatore");
-    strcpy(domande[49].opzioni[3], "Un valore numerico");
-    domande[49].rispostaCorretta = 'a';
+    
 
  */

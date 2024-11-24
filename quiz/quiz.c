@@ -35,7 +35,7 @@ int main() {
                 iniziaQuiz(domande, numeroDomande);
                 break;
             case 2:
-                printf("Scegli il livello (1 - 5): ");
+                printf("Scegli il livello (1 - 6): ");
                 scanf("%d", &livello);
                 while (livello != 1 && livello != 2 && livello != 3 && livello != 4 && livello != 5 && livello != 6){
                     printf("\033[31mScegli il livello da 1 a 6\033[0m:: ");
