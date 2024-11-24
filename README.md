@@ -76,4 +76,4 @@ Questo avvierà il quiz, dove potrai rispondere alle domande e visualizzare i ri
 
 ## Note
 
-Se apportate delle modifiche che volete publicare , non dimenticatevi di farlo nel vostro branch di GitHub !!
+Se apportate delle modifiche che desiderate pubblicare, assicuratevi di farlo nel branch **Pupgrade***. In alternativa, potete creare un nuovo branch e inviare una richiesta di *merge* per unire le modifiche al branch principale.
