@@ -12,7 +12,7 @@ Questo progetto è un'applicazione in C che permette agli studenti di esercitars
 
 Il progetto è strutturato in diverse cartelle e file per una gestione ordinata del codice:
 
-Cartella `autoValutazioneQuiz`
+Cartella `quiz`
 
 Contiene i file sorgente principali e le librerie necessarie per eseguire il quiz.
 
@@ -73,3 +73,7 @@ Questo avvierà il quiz, dove potrai rispondere alle domande e visualizzare i ri
 
 - Il comando `gcc quiz.c ask.c -o quiz` è utilizzato per compilare il programma. Il flag `-o quiz` specifica che l'eseguibile generato sarà chiamato `quiz`.
 - Il comando `./quiz` esegue il programma compilato.
+
+## Note
+
+Se apportate delle modifiche che volete publicare , non dimenticatevi di farlo nel vostro branch di GitHub !!
