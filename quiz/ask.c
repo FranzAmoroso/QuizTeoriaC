@@ -825,7 +825,7 @@ void caricaDomande(Domanda *domande, int *numeroDomande, int livello) {
 
 
         case 6:
-            *numeroDomande = 20;
+            *numeroDomande = 40;
 
             strcpy(domande[0].domanda, "Qual è l'indice del primo elemento di un array in C?");
             strcpy(domande[0].opzioni[0], "0");
@@ -1114,7 +1114,235 @@ void caricaDomande(Domanda *domande, int *numeroDomande, int livello) {
             strcpy(domande[39].opzioni[2], "Aggiunge una stringa alla fine di un'altra");
             strcpy(domande[39].opzioni[3], "Converte una stringa in maiuscolo");
             domande[39].rispostaCorretta = 'a';
-            
+
+            strcpy(domande[40].domanda, "Quale delle seguenti affermazioni è falsa riguardo alla mediana?");
+            strcpy(domande[40].opzioni[0], "La mediana è il valore centrale in una serie ordinata di dati.");
+            strcpy(domande[40].opzioni[1], "L'algoritmo ordina l'array e seleziona l'elemento centrale.");
+            strcpy(domande[40].opzioni[2], "Con numero pari di elementi, è la media dei due centrali.");
+            strcpy(domande[40].opzioni[3], "Tutte le affermazioni precedenti sono vere.");
+            domande[40].rispostaCorretta = 'd';
+
+            strcpy(domande[41].domanda, "Quale delle seguenti affermazioni è falsa riguardo alla moda?");
+            strcpy(domande[41].opzioni[0], "La moda è il valore che ricorre più frequentemente.");
+            strcpy(domande[41].opzioni[1], "L'algoritmo conta occorrenze e seleziona il valore massimo.");
+            strcpy(domande[41].opzioni[2], "La moda può essere determinata graficamente con un istogramma.");
+            strcpy(domande[41].opzioni[3], "Tutte le affermazioni precedenti sono vere.");
+            domande[41].rispostaCorretta = 'd';
+
+            strcpy(domande[42].domanda, "Quale delle seguenti affermazioni è vera riguardo al bubble sort?");
+            strcpy(domande[42].opzioni[0], "È facile da programmare.");
+            strcpy(domande[42].opzioni[1], "Opera lentamente su array grandi.");
+            strcpy(domande[42].opzioni[2], "Esistono tecniche di ordinamento più efficienti.");
+            strcpy(domande[42].opzioni[3], "Tutte le affermazioni precedenti sono vere.");
+            domande[42].rispostaCorretta = 'd';
+
+            strcpy(domande[43].domanda, "Nel bubble sort, è necessaria una variabile aggiuntiva per uno scambio?");
+            strcpy(domande[43].opzioni[0], "Vero");
+            strcpy(domande[43].opzioni[1], "Falso");
+            domande[43].rispostaCorretta = 'a';
+
+            strcpy(domande[44].domanda, "Quale delle seguenti affermazioni è falsa riguardo alla ricerca lineare?");
+            strcpy(domande[44].opzioni[0], "Confronta ogni elemento dell'array con la chiave.");
+            strcpy(domande[44].opzioni[1], "Può trovare una corrispondenza prima dell'ultimo elemento.");
+            strcpy(domande[44].opzioni[2], "Confronta in media metà degli elementi.");
+            strcpy(domande[44].opzioni[3], "Funziona bene per array piccoli o non ordinati.");
+            domande[44].rispostaCorretta = 'c';
+
+            strcpy(domande[45].domanda, "Quale delle seguenti affermazioni è falsa riguardo alla ricerca binaria?");
+            strcpy(domande[45].opzioni[0], "Si usa per array ordinati.");
+            strcpy(domande[45].opzioni[1], "Elimina dalla ricerca due elementi dopo un confronto.");
+            strcpy(domande[45].opzioni[2], "Confronta l'elemento centrale con la chiave.");
+            strcpy(domande[45].opzioni[3], "Prosegue finché l'array si riduce a un elemento.");
+            domande[45].rispostaCorretta = 'b';
+
+            strcpy(domande[46].domanda, "Quale delle seguenti affermazioni è falsa riguardo agli indici di un array?");
+            strcpy(domande[46].opzioni[0], "Devono essere maggiori o uguali a 0.");
+            strcpy(domande[46].opzioni[1], "Il C non verifica automaticamente i limiti degli array.");
+            strcpy(domande[46].opzioni[2], "Accedere a indici fuori dai limiti può dare errori.");
+            strcpy(domande[46].opzioni[3], "Tutte le affermazioni precedenti sono vere.");
+            domande[46].rispostaCorretta = 'd';
+
+            strcpy(domande[47].domanda, "Quando printf valuta una stringa di controllo, è sicuro usare input dall'utente?");
+            strcpy(domande[47].opzioni[0], "Vero");
+            strcpy(domande[47].opzioni[1], "Falso");
+            domande[47].rispostaCorretta = 'b';
+        break;
+
+    case 7:
+        *numeroDomande = 23;
+
+        // Domanda 0
+        strcpy(domande[0].domanda, "La definizione: int *countPtr, count; specifica che countPtr e count sono di tipo int *, ciascuno è un puntatore a un intero.");
+        strcpy(domande[0].opzioni[0], "Vero");
+        strcpy(domande[0].opzioni[1], "Falso");
+        domande[0].rispostaCorretta = 'b';
+
+        // Domanda 1
+        strcpy(domande[1].domanda, "Quale delle seguenti affermazioni è falsa?");
+        strcpy(domande[1].opzioni[0], "Un puntatore può essere inizializzato a NULL, 0 o a un indirizzo.");
+        strcpy(domande[1].opzioni[1], "Inizializzare un puntatore a 0 equivale a inizializzare un puntatore a NULL, ma 0 è preferibile.");
+        strcpy(domande[1].opzioni[2], "L'unico valore intero che si può assegnare direttamente a una variabile puntatore è 0.");
+        strcpy(domande[1].opzioni[3], "Inizializzate i puntatori per prevenire risultati inaspettati.");
+        domande[1].rispostaCorretta = 'b';
+
+        // Domanda 2
+        strcpy(domande[2].domanda, "Presupponendo le definizioni double d = 98.5; *dPtr; l'istruzione dPtr = &d; assegna l'indirizzo della variabile d alla variabile puntatore dPtr.");
+        strcpy(domande[2].opzioni[0], "Vero");
+        strcpy(domande[2].opzioni[1], "Falso");
+        domande[2].rispostaCorretta = 'a';
+
+        strcpy(domande[3].domanda, "L'operatore unario di indirezione (*) restituisce il valore dell'oggetto al quale punta il suo operando (puntatore). Usare l'operatore * in questo modo viene detto:");
+        strcpy(domande[3].opzioni[0], "Dereferenziare un puntatore");
+        strcpy(domande[3].opzioni[1], "Indirizzare un valore");
+        strcpy(domande[3].opzioni[2], "Accedere alla memoria");
+        strcpy(domande[3].opzioni[3], "Referenziare un indirizzo");
+        domande[3].rispostaCorretta = 'a';
+
+
+        // Domanda 4
+        strcpy(domande[4].domanda, "Quale delle seguenti affermazioni è falsa?");
+        strcpy(domande[4].opzioni[0], "Per default, tutti gli argomenti (che non siano array) sono passati per valore.");
+        strcpy(domande[4].opzioni[1], "Le funzioni spesso richiedono puntatori per evitare copie di oggetti grandi.");
+        strcpy(domande[4].opzioni[2], "L'istruzione return si può usare per restituire più valori.");
+        strcpy(domande[4].opzioni[3], "Il passaggio per riferimento permette di 'restituire' più valori.");
+        domande[4].rispostaCorretta = 'c';
+
+        // Domanda 5
+        strcpy(domande[5].domanda, "Quale delle seguenti affermazioni è falsa?");
+        strcpy(domande[5].opzioni[0], "Si usano puntatori e operatori di indirezione per il passaggio per riferimento.");
+        strcpy(domande[5].opzioni[1], "L'operatore & passa gli indirizzi degli argomenti.");
+        strcpy(domande[5].opzioni[2], "Gli array vengono passati per riferimento usando &.");
+        strcpy(domande[5].opzioni[3], "Tutte le precedenti affermazioni sono vere.");
+        domande[5].rispostaCorretta = 'c';
+
+        // Domanda 6
+        strcpy(domande[6].domanda, "Cosa rappresenta sPtr nel prototipo void convertToUppercase(char *sPtr)?");
+        strcpy(domande[6].opzioni[0], "Un puntatore non costante a dati costanti.");
+        strcpy(domande[6].opzioni[1], "Un puntatore costante a dati non costanti.");
+        strcpy(domande[6].opzioni[2], "Un puntatore non costante a dati non costanti.");
+        strcpy(domande[6].opzioni[3], "Un puntatore costante a dati costanti.");
+        domande[6].rispostaCorretta = 'c';
+
+        strcpy(domande[7].domanda, "Il privilegio di accesso più basso è quello concesso da un puntatore a dati __. Un puntatore di questo tipo punta sempre alla stessa locazione di memoria e i dati non possono essere modificati.");
+        strcpy(domande[7].opzioni[0], "costante, costanti");
+        strcpy(domande[7].opzioni[1], "volatile, non costanti");
+        strcpy(domande[7].opzioni[2], "statica, volatili");
+        strcpy(domande[7].opzioni[3], "dinamica, modificabili");
+        domande[7].rispostaCorretta = 'a';
+
+
+        // Domanda 8
+        strcpy(domande[8].domanda, "Di norma, quando si passa un array a una funzione, si passa anche come argomento la dimensione dell’array. Qual è il problema di impostare direttamente la dimensione nella definizione della funzione?");
+        strcpy(domande[8].opzioni[0], "Limiterebbe la funzione a una dimensione specifica, riducendone la riutilizzabilità.");
+        strcpy(domande[8].opzioni[1], "Aumenterebbe la complessità temporale della funzione.");
+        strcpy(domande[8].opzioni[2], "Creerebbe conflitti con i puntatori nell'array.");
+        strcpy(domande[8].opzioni[3], "Comprometterebbe la sicurezza del buffer.");
+        domande[8].rispostaCorretta = 'a';
+
+
+        // Domanda 9
+        strcpy(domande[9].domanda, "La funzione bubbleSort usa &array[j] e &array[j+1] per passaggio per riferimento. Supponete che swap riceva questi puntatori in int *firstPtr e int *secondPtr. Quale codice è corretto?");
+        strcpy(domande[9].opzioni[0], "int temp = *firstPtr; *firstPtr = *secondPtr; *secondPtr = temp;");
+        strcpy(domande[9].opzioni[1], "int temp = firstPtr; firstPtr = secondPtr; secondPtr = temp;");
+        strcpy(domande[9].opzioni[2], "swap(&firstPtr, &secondPtr);");
+        strcpy(domande[9].opzioni[3], "*firstPtr = *secondPtr; *secondPtr = *firstPtr;");
+        domande[9].rispostaCorretta = 'a';
+
+
+            // Domanda 10
+        strcpy(domande[10].domanda, "Data la definizione dell'array: double temperatures[31]; l'espressione: sizeof(temperatures) / sizeof(temperatures[0]) quale attributo di temperatures determina?");
+        strcpy(domande[10].opzioni[0], "La dimensione di ogni elemento");
+        strcpy(domande[10].opzioni[1], "Il numero di elementi nell'array");
+        strcpy(domande[10].opzioni[2], "La dimensione totale dell'array");
+        strcpy(domande[10].opzioni[3], "Nessuna delle precedenti");
+        domande[10].rispostaCorretta = 'b';
+
+        // Domanda 11
+        strcpy(domande[11].domanda, "Quando un intero è sommato a un puntatore o sottratto da esso, il puntatore è incrementato o decrementato di quell’intero moltiplicato per cosa?");
+        strcpy(domande[11].opzioni[0], "La dimensione dell'oggetto a cui il puntatore fa riferimento");
+        strcpy(domande[11].opzioni[1], "La dimensione del puntatore");
+        strcpy(domande[11].opzioni[2], "L'indirizzo base dell'oggetto");
+        strcpy(domande[11].opzioni[3], "La dimensione totale dell'array");
+        domande[11].rispostaCorretta = 'a';
+
+        strcpy(domande[12].domanda, "Se bPtr punta al secondo elemento dell'array b (b[1]), con quale espressione si può fare riferimento all'elemento b[3]?");
+        strcpy(domande[12].opzioni[0], "*bPtr[2]");
+        strcpy(domande[12].opzioni[1], "sizeof(b) / sizeof(bPtr)");
+        strcpy(domande[12].opzioni[2], "*(bPtr + 2)");
+        strcpy(domande[12].opzioni[3], "&b[1]");
+        domande[12].rispostaCorretta = 'c';
+
+
+        // Domanda 13
+        strcpy(domande[13].domanda, "Un uso comune di un array di puntatori è quello di realizzare un array di cosa?");
+        strcpy(domande[13].opzioni[0], "Numeri interi");
+        strcpy(domande[13].opzioni[1], "Stringhe");
+        strcpy(domande[13].opzioni[2], "Puntatori a funzioni");
+        strcpy(domande[13].opzioni[3], "Nessuna delle precedenti");
+        domande[13].rispostaCorretta = 'b';
+
+        // Domanda 14
+        strcpy(domande[14].domanda, "L'algoritmo per mescolare le carte che abbiamo presentato può essere eseguito indefinitamente se le carte già mescolate vengono ripetutamente selezionate a caso. Questo fenomeno è noto come?");
+        strcpy(domande[14].opzioni[0], "Mescolamento circolare");
+        strcpy(domande[14].opzioni[1], "Ridistribuzione casuale");
+        strcpy(domande[14].opzioni[2], "Posposizione indefinita");
+        strcpy(domande[14].opzioni[3], "Riordinamento infinito");
+        domande[14].rispostaCorretta = 'c';
+
+        // Domanda 15
+        strcpy(domande[15].domanda, "La specifica di formato \"%5s of %-8s\" stampa una stringa allineata a destra in un campo di cinque caratteri seguita da 'of' e da una stringa allineata a sinistra in un campo di otto caratteri?");
+        strcpy(domande[15].opzioni[0], "Vero");
+        strcpy(domande[15].opzioni[1], "Falso");
+        domande[15].rispostaCorretta = 'a';
+
+        // Domanda 16
+        strcpy(domande[16].domanda, "Il parametro compare dichiarato nell'intestazione della funzione bubble sort come: int (*compare)(int a, int b) è un puntatore a una funzione?");
+        strcpy(domande[16].opzioni[0], "Vero");
+        strcpy(domande[16].opzioni[1], "Falso");
+        domande[16].rispostaCorretta = 'b';
+
+        // Domanda 17
+        strcpy(domande[17].domanda, "Proprio come un puntatore a una variabile è dereferenziato per accedere al valore della variabile, un puntatore a una funzione è dereferenziato per cosa?");
+        strcpy(domande[17].opzioni[0], "Modificare la funzione");
+        strcpy(domande[17].opzioni[1], "Chiamare la funzione");
+        strcpy(domande[17].opzioni[2], "Allocare memoria per la funzione");
+        strcpy(domande[17].opzioni[3], "Creare un nuovo puntatore");
+        domande[17].rispostaCorretta = 'b';
+
+        // Domanda 18
+        strcpy(domande[18].domanda, "Una caratteristica chiave di funzioni come printf_s e scanf_s è quella di avere restrizioni in fase di esecuzione. Cosa richiedono i loro argomenti puntatore?");
+        strcpy(domande[18].opzioni[0], "Devono essere non-NULL");
+        strcpy(domande[18].opzioni[1], "Devono essere costanti");
+        strcpy(domande[18].opzioni[2], "Devono essere allineati a 4 byte");
+        strcpy(domande[18].opzioni[3], "Devono essere inizializzati a zero");
+        domande[18].rispostaCorretta = 'a';
+
+        // Domanda 19
+        strcpy(domande[19].domanda, "L'uso scorretto dei puntatori porta oggi a molte delle più comuni vulnerabilità nella sicurezza dei sistemi?");
+        strcpy(domande[19].opzioni[0], "Vero");
+        strcpy(domande[19].opzioni[1], "Falso");
+        domande[19].rispostaCorretta = 'a';
+
+        // Domanda 20
+        strcpy(domande[20].domanda, "Un puntatore dichiarato void può essere dereferenziato?");
+        strcpy(domande[20].opzioni[0], "Vero");
+        strcpy(domande[20].opzioni[1], "Falso");
+        domande[20].rispostaCorretta = 'b';
+
+        // Domanda 21
+        strcpy(domande[21].domanda, "Una variabile puntatore contiene come suo valore cosa?");
+        strcpy(domande[21].opzioni[0], "L'indirizzo di un'altra variabile");
+        strcpy(domande[21].opzioni[1], "Il valore della variabile puntata");
+        strcpy(domande[21].opzioni[2], "Un numero casuale");
+        strcpy(domande[21].opzioni[3], "Nessuna delle precedenti");
+        domande[21].rispostaCorretta = 'a';
+
+        strcpy(domande[22].domanda, "Si supponga che b è un array e bptr un puntatore a tale array, quale espressione si riferisce all'indirizzo dell'elemento 3?");
+        strcpy(domande[22].opzioni[0], "bPtr[3]");
+        strcpy(domande[22].opzioni[1], "*(b + 3)");
+        strcpy(domande[22].opzioni[2], "*(bPtr + 3)");
+        strcpy(domande[22].opzioni[3], "&b[3]");
+        domande[22].rispostaCorretta = 'd';
         break;
     
     default:
