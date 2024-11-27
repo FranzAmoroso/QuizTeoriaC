@@ -5,7 +5,7 @@ Questo progetto è un'applicazione in C che permette agli studenti di esercitars
 ## Funzionalità principali
 
 - **Inizia il quiz**: Gli studenti possono iniziare un quiz con un numero di domande in base al livello di difficoltà selezionato.
-- **Cambio di livello di difficoltà**: L'utente può selezionare il livello di difficoltà tra 1 e 5.
+- **Cambio di livello di difficoltà**: L'utente può selezionare il livello di difficoltà tra 1 e 7.
 - **Visualizzazione dei risultati**: Dopo aver completato il quiz, l'applicazione mostra il punteggio ottenuto rispetto al numero di domande.
 
 ## Struttura del progetto
@@ -27,7 +27,7 @@ Contiene i file sorgente principali e le librerie necessarie per eseguire il qui
 1. **Inizio del programma**: Quando il programma viene avviato, l'utente vede un menu con le seguenti opzioni:
 
    - **Inizia il quiz**: Avvia il quiz e le domande vengono caricate in base al livello selezionato.
-   - **Cambia livello di difficoltà**: L'utente può scegliere il livello da 1 a 5. Ogni livello contiene un set diverso di domande.
+   - **Cambia livello di difficoltà**: L'utente può scegliere il livello da 1 a 7. Ogni livello contiene un set diverso di domande.
    - **Visualizza risultati**: Dopo aver completato il quiz, l'utente può visualizzare i risultati.
    - **Esci**: Uscita dal programma.
 
@@ -40,9 +40,8 @@ Contiene i file sorgente principali e le librerie necessarie per eseguire il qui
 ## Funzioni da implementare e migliorare
 
 - **Aggiunta di nuove domande**: È possibile ampliare il quiz aggiungendo nuove domande nei vari livelli.
-- **Gestione di più livelli di difficoltà**: Il progetto supporta già i livelli di difficoltà da 1 a 5 (da capitolo 1 a capitolo 5). Potresti aggiungere altre categorie o maggiori dettagli per ogni livello.
+- **Gestione di più livelli di difficoltà**: Il progetto supporta già i livelli di difficoltà da 1 a 7 (da capitolo 1 a capitolo 7). Potresti aggiungere altre categorie o maggiori dettagli per ogni livello.
 - **Personalizzazione della visualizzazione dei risultati**: Puoi estendere la funzionalità per salvare i risultati in un file o fornire feedback più dettagliato sull'andamento dell'utente.
-- **Sistemare il livello 1**: All'avvio del livello 1 (o capitolo 1) Il test non si avvia a differenza degli altri livelli (o capitoli).
 
 ## Come ampliare il progetto
 
